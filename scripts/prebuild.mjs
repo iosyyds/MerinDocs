@@ -120,9 +120,10 @@ const homePath = path.join(NOTE_DIR, 'README.md');
 if (fs.existsSync(homePath)) {
   const { html, toc } = renderDoc(homePath);
   fs.writeFileSync(path.join(OUT_DIR, 'home.json'), JSON.stringify({
+    exists: true,
     title: '首页',
-    content: html,
-    toc,
+    html: html,
+    toc: toc,
   }, null, 2));
   console.log('✅ home.json  (首页)');
 }
@@ -142,9 +143,10 @@ function processFiles(entries, baseDir) {
       const fileName = entry.path.replace(/\.md$/, '').replace(/[\/]/g, '__') + '.json';
       fs.writeFileSync(path.join(docsDir, fileName), JSON.stringify({
         title: entry.name,
-        content: html,
-        toc,
+        html: html,
+        toc: toc,
         path: entry.path,
+        kind: 'md',
       }, null, 2));
       console.log(`   📄 ${entry.path}`);
     }
