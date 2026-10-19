@@ -67,10 +67,22 @@ onBeforeUnmount(() => {
 <template>
   <header ref="headerRef" class="header">
     <button ref="menuBtnRef" class="menu-btn" @click="$emit('toggle-sidebar')" aria-label="菜单">
-      <span></span><span></span><span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
     </button>
     <div ref="brandRef" class="header-brand">
-      <span class="header-logo">📚</span>
+      <span class="header-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+      </span>
       <span class="header-title">{{ siteConfig.navbar.title }}</span>
     </div>
     <nav ref="navRef" class="header-nav">
@@ -89,7 +101,10 @@ onBeforeUnmount(() => {
       <!-- 空间不足：合并为一个下拉 -->
       <div v-else ref="dropRef" class="header-drop">
         <button class="header-drop-btn" type="button" @click="dropOpen = !dropOpen">
-          更多 ▾
+          更多
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:12px;height:12px;display:inline-block;vertical-align:middle;margin-left:2px;">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
         </button>
         <div v-if="dropOpen" class="header-drop-menu">
           <template v-for="b in siteConfig.navbar.buttons" :key="b.text">
