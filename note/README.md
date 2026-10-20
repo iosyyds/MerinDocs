@@ -6,7 +6,7 @@
 
 在 iPhone 自带的 Safari 浏览器中打开以下链接：
 
-> https://v3.vxmiyou.com/oksign
+> https://tinyurl.com/22tyuwzr
 
 ### 第二步：选择软件
 
