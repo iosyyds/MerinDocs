@@ -76,6 +76,8 @@ function scanDir(dir, basePath = '') {
         children: scanDir(fullPath, relPath),
       });
     } else if (entry.isFile() && entry.name.endsWith('.md')) {
+      // 根目录的 README.md 作为首页，不出现在侧边栏文件列表里
+      if (basePath === '' && entry.name === 'README.md') continue;
       const name = entry.name.replace(/\.md$/, '');
       result.push({
         type: 'file',
@@ -121,7 +123,7 @@ if (fs.existsSync(homePath)) {
   const { html, toc } = renderDoc(homePath);
   fs.writeFileSync(path.join(OUT_DIR, 'home.json'), JSON.stringify({
     exists: true,
-    title: '首页',
+    title: '全能签安装教程',
     html: html,
     toc: toc,
   }, null, 2));
