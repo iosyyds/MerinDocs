@@ -1,42 +1,34 @@
-# 全能签安装教程
+<div style="text-align: center; padding: 60px 20px;">
 
-## 安装步骤
+# 🍎 全能签安装指南
 
-### 第一步：打开签名页面
-
-在 iPhone 自带的 Safari 浏览器中打开以下链接：
-
-> https://tinyurl.com/22tyuwzr
-
-### 第二步：选择软件
-
-在页面中选择软件 **「全能签」**。
-
-### 第三步：填入签名码
-
-在输入框中填入你的签名码，然后确认。
-
-### 第四步：开始安装
-
-1. 点击「开始安装」
-2. 弹窗后依次点击 **安装** 和 **下载证书**
-3. 等待描述文件下载完成
+### 一键安装你的 iOS 应用，简单又快捷
 
 ---
 
-## 开启开发者模式
+<br>
 
-如果安装后打开 App 提示需要开启开发者模式，请按以下步骤操作：
+<div style="max-width: 520px; margin: 0 auto; text-align: left; background: #f8fafc; border-radius: 16px; padding: 36px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
 
-![开发者模式开启教程](https://aka.doubaocdn.com/s/faklVUUSP2)
+## ✨ 你能得到什么
 
-### 详细步骤：
+- 🚀 **3分钟快速安装** — 不用电脑，手机直接搞定
+- 🔐 **稳定签名** — 不掉签，长期使用
+- 📱 **支持所有 iOS 设备** — 无需越狱
 
-1. 打开 iPhone **设置** → **隐私与安全性**
-2. 滑到最底部，找到 **开发者模式**
-3. 打开开发者模式开关
-4. 点击弹窗中的 **打开**
-5. 设备会**重新启动**
-6. 重启后解锁设备，确认开启开发者模式
+<br>
 
-> ⚠️ 注意：开启开发者模式后，设备安全性会降低，请知悉后操作。
+<div style="text-align: center;">
+<a href="#/doc/全能签教程/安装教程" style="display: inline-block; background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; padding: 14px 48px; border-radius: 10px; text-decoration: none; font-size: 18px; font-weight: 500; box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);">
+  立即开始安装 →
+</a>
+</div>
+
+</div>
+
+<br>
+<br>
+
+<small style="color: #94a3b8;">© 甜甜 · 傲行互娱</small>
+
+</div>
