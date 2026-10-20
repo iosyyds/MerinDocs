@@ -1,6 +1,6 @@
 {
   "_说明": "本站点自定义配置文件：修改后刷新浏览器即可生效（无需重启服务）。",
-  "siteTitle": "全能签使用文档",
+  "siteTitle": "全能签教程",
   "safeDomains": "localhost,127.0.0.1,vxmiyou.com",
   "navbar": {
     "title": "全能签教程",
@@ -9,10 +9,10 @@
     ]
   },
   "footer": {
-    "copyrightText": "全能签教程文档",
-    "copyrightUrl": "",
-    "poweredByText": "MerinDocs文档系统",
-    "poweredByUrl": "https://www.tinsur.cn/merindocs",
+    "copyrightText": "傲行互娱",
+    "copyrightUrl": "/",
+    "poweredByText": "傲行互娱",
+    "poweredByUrl": "/",
     "beian": {
       "icpText": "",
       "icpUrl": "https://beian.miit.gov.cn/",
