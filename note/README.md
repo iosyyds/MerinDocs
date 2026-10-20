@@ -19,7 +19,7 @@
 <br>
 
 <div style="text-align: center;">
-<a href="#/doc/全能签教程/安装教程" style="display: inline-block; background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; padding: 14px 48px; border-radius: 10px; text-decoration: none; font-size: 18px; font-weight: 500; box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);">
+<a href="#/doc/全能签教程/安装教程.md" style="display: inline-block; background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; padding: 14px 48px; border-radius: 10px; text-decoration: none; font-size: 18px; font-weight: 500; box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);">
   立即开始安装 →
 </a>
 </div>
