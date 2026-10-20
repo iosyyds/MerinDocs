@@ -1,15 +1,15 @@
 {
   "_说明": "本站点自定义配置文件：修改后刷新浏览器即可生效（无需重启服务）。",
-  "siteTitle": "全能签教程",
+  "siteTitle": "甜甜",
   "safeDomains": "localhost,127.0.0.1,vxmiyou.com",
   "navbar": {
-    "title": "全能签教程",
+    "title": "甜甜",
     "buttons": [
       { "text": "返回首页", "url": "/", "target": "_self" }
     ]
   },
   "footer": {
-    "copyrightText": "傲行互娱",
+    "copyrightText": "甜甜",
     "copyrightUrl": "/",
     "poweredByText": "傲行互娱",
     "poweredByUrl": "/",
