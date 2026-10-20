@@ -15,8 +15,8 @@ import { viewLoading } from './loading';
 
 const tree = ref([]);
 const sidebarOpen = ref(false);
-// 导航栏整体收起/展开（仅 PC 端）：默认展开，切换只影响本次会话，不做持久化
-const navCollapsed = ref(false);
+// 导航栏整体收起/展开（仅 PC 端）：默认收起，切换只影响本次会话，不做持久化
+const navCollapsed = ref(true);
 const router = useRouter();
 const route = useRoute();
 
