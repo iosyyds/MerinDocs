@@ -703,7 +703,7 @@ body {
   width: 20px;
   flex-shrink: 0;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   position: sticky;
   top: var(--header-height);
@@ -715,7 +715,6 @@ body {
   transition: color 0.15s, background 0.15s;
   -webkit-user-select: none;
   user-select: none;
-  padding-top: 24px;
 }
 
 .sidebar-toggle:hover {
@@ -743,12 +742,12 @@ body {
   box-shadow: var(--color-shadow-md);
   z-index: 20;
   align-items: center;
+  justify-content: center;
   /* 收起后不占据布局空间 */
   flex-basis: 0;
   min-width: 0;
   max-width: 0;
   overflow: visible;
-  border-right: none;
 }
 
 .sidebar.collapsed ~ .sidebar-toggle:hover {
