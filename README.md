@@ -4,12 +4,6 @@
 
 前端 Vue 3 + Vite，后端 Node.js + Express，生产环境**单端口部署**，五分钟即可上线。
 
-**部署及软件各自扩展功能请移步至项目文档查看。**
-
-项目文档：https://merin.tinsur.cn
-
-项目主页：https://www.tinsur.cn/merindocs
-
 ---
 
 ## 特性
