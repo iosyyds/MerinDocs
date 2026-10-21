@@ -698,9 +698,9 @@ body {
   color: var(--color-muted);
 }
 
-/* 侧边栏收起/展开按钮：只保留点击切换，去掉拖拽调整宽度 */
+/* 侧边栏收起/展开按钮：展开时是细竖条，收起时变成悬浮小按钮 */
 .sidebar-toggle {
-  width: 18px;
+  width: 20px;
   flex-shrink: 0;
   display: flex;
   align-items: flex-start;
@@ -715,7 +715,7 @@ body {
   transition: color 0.15s, background 0.15s;
   -webkit-user-select: none;
   user-select: none;
-  padding-top: 20px;
+  padding-top: 24px;
 }
 
 .sidebar-toggle:hover {
@@ -724,9 +724,31 @@ body {
 }
 
 .sidebar-toggle svg {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   flex-shrink: 0;
+}
+
+/* 侧边栏收起时：按钮变成悬浮小按钮样式 */
+.sidebar.collapsed ~ .sidebar-toggle {
+  position: fixed;
+  left: 12px;
+  top: calc(var(--header-height) + 16px);
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--color-shadow-md);
+  z-index: 20;
+  align-items: center;
+}
+
+.sidebar.collapsed ~ .sidebar-toggle:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: var(--color-shadow-lg);
 }
 
 /* Sidebar 全局搜索 */
