@@ -743,6 +743,12 @@ body {
   box-shadow: var(--color-shadow-md);
   z-index: 20;
   align-items: center;
+  /* 收起后不占据布局空间 */
+  flex-basis: 0;
+  min-width: 0;
+  max-width: 0;
+  overflow: visible;
+  border-right: none;
 }
 
 .sidebar.collapsed ~ .sidebar-toggle:hover {
