@@ -61,6 +61,13 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
+  --color-info: #007aff;
+  --color-info-light: #e8f0ff;
+  --color-danger: #ff3b30;
+  --color-danger-light: #ffe8ec;
+  --color-warning: #ff9500;
+  --color-warning-light: #fff8ed;
+  --color-warning-text: #92400e;
 }
 
 :root[data-theme='dark'] {
@@ -114,6 +121,13 @@
   --hl-addition-bg: #0f3d1e;
   --hl-deletion: #ff453a;
   --hl-deletion-bg: #4a0e0e;
+  --color-info: #64d2ff;
+  --color-info-light: rgba(100, 210, 255, 0.15);
+  --color-danger: #ff453a;
+  --color-danger-light: rgba(255, 69, 58, 0.15);
+  --color-warning: #ffd60a;
+  --color-warning-light: rgba(255, 214, 10, 0.12);
+  --color-warning-text: #ffd60a;
 }
 
 html,
@@ -461,13 +475,13 @@ body {
 }
 
 .user-action-icon-blue {
-  background: #e8f0ff;
-  color: #007aff;
+  background: var(--color-info-light);
+  color: var(--color-info);
 }
 
 .user-action-icon-red {
-  background: #ffe8ec;
-  color: #ff3b30;
+  background: var(--color-danger-light);
+  color: var(--color-danger);
 }
 
 .user-action-label {
@@ -476,11 +490,11 @@ body {
 }
 
 .user-action-label-blue {
-  color: #007aff;
+  color: var(--color-info);
 }
 
 .user-action-label-red {
-  color: #ff3b30;
+  color: var(--color-danger);
 }
 
 .user-card-enter-active,
@@ -859,8 +873,8 @@ body {
 }
 
 .search-result mark {
-  background: #ffe4e6;
-  color: #be185d;
+  background: var(--search-highlight-bg);
+  color: var(--search-highlight-color);
   padding: 0 1px;
   border-radius: 2px;
 }
@@ -1957,10 +1971,10 @@ body {
   gap: 10px;
   margin-bottom: 24px;
   padding: 14px 16px;
-  border: 1px solid #ff9500;
+  border: 1px solid var(--color-warning);
   border-radius: var(--radius-md);
-  background: #fff8ed;
-  color: #92400e;
+  background: var(--color-warning-light);
+  color: var(--color-warning-text);
   font-size: 14px;
   line-height: 1.65;
 }
@@ -1970,7 +1984,7 @@ body {
   width: 18px;
   height: 18px;
   margin-top: 2px;
-  color: #ff9500;
+  color: var(--color-warning);
 }
 
 .protected-notice-text {
@@ -1999,35 +2013,16 @@ body {
   background: rgba(146, 64, 14, 0.1);
 }
 
-:root[data-theme='dark'] .protected-notice {
-  border-color: rgba(255, 149, 0, 0.45);
-  background: rgba(255, 149, 0, 0.12);
-  color: #ffd60a;
-}
-
-:root[data-theme='dark'] .protected-notice-icon {
-  color: #ffd60a;
-}
-
-:root[data-theme='dark'] .protected-notice-close:hover {
-  background: rgba(255, 214, 10, 0.15);
-}
-
 /* PDF 徽标 */
 .file-item-pdf-badge {
   flex-shrink: 0;
   padding: 1px 6px;
   border-radius: 4px;
-  background: #ffe4e6;
-  color: #e11d48;
+  background: var(--color-danger-light);
+  color: var(--color-danger);
   font-size: 10px;
   font-weight: 600;
   line-height: 1.5;
-}
-
-:root[data-theme='dark'] .file-item-pdf-badge {
-  background: rgba(225, 29, 72, 0.18);
-  color: #fb7185;
 }
 
 /* PDF 预览 */
@@ -2205,17 +2200,13 @@ body {
 .doc-password-error {
   margin-top: 10px;
   font-size: 13px;
-  color: #ff3b30;
+  color: var(--color-danger);
 }
 
 .doc-password-cooldown {
   margin-top: 10px;
   font-size: 13px;
-  color: #ff9500;
-}
-
-:root[data-theme='dark'] .doc-password-cooldown {
-  color: #ffd60a;
+  color: var(--color-warning);
 }
 
 .doc-password-btn {
